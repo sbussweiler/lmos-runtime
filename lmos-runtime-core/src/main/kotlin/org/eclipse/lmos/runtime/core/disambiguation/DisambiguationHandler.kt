@@ -60,6 +60,7 @@ class DefaultDisambiguationHandler(
         return AssistantMessage(
             content = disambiguationResult.clarificationQuestion,
             anonymizationEntities = emptyList(),
+            isDisambiguation = true,
         )
     }
 

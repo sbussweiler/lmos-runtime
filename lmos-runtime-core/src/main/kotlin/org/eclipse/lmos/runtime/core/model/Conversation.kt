@@ -45,6 +45,7 @@ sealed class ChatMessage {
 data class AssistantMessage(
     override val content: String,
     val anonymizationEntities: List<AnonymizationEntity>? = emptyList(),
+    val isDisambiguation: Boolean = false,
 ) : ChatMessage()
 
 @Serializable
